@@ -6,6 +6,22 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<button onclick="setLang('hi')">हिंदी</button>
+<button onclick="setLang('en')">English</button>
+
+<div class="lang hi">
+  <h1>संपर्क करें</h1>
+  <p>आप मुझसे Telegram या Email द्वारा संपर्क कर सकते हैं।</p>
+</div>
+
+<div class="lang en">
+  <h1>Contact</h1>
+  <p>You can contact me via Telegram or Email.</p>
+</div>
+
+<footer>
+  © 2026 | Academic Journey
+</footer>
 
 <header>
     <h1>Contact</h1>
@@ -31,6 +47,15 @@
 <footer>
     © 2026 | Academic Journey
 </footer>
+<script>
+function setLang(lang) {
+  document.querySelectorAll('.lang').forEach(el => {
+    el.style.display = 'none';
+  });
+  document.querySelector('.' + lang).style.display = 'block';
+}
+</script>
 
 </body>
 </html>
+
