@@ -68,4 +68,12 @@ button {
   margin-right: 5px;
   cursor: pointer;
 }
+.lang {
+  display: none;
+}
+
+.lang.hi {
+  display: block;
+}
+
 
