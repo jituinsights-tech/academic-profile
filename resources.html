@@ -19,6 +19,9 @@
 <button onclick="setLang('en')">English</button>
 
 <header>
+  <button onclick="showHindi()">हिंदी</button>
+<button onclick="showEnglish()">English</button>
+
     <section id="resources">
   <h2>अध्ययन सामग्री</h2>
 
@@ -60,9 +63,18 @@
 <footer>
     © 2026 | Academic Journey
 </footer>
+<script>
+function showHindi() {
+  document.body.className = "hindi";
+}
+function showEnglish() {
+  document.body.className = "english";
+}
+</script>
 
 </body>
 </html>
+
 
 
 
