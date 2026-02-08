@@ -1,81 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<meta charset="UTF-8">
-<title>About Me</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>About | Jitu Insights</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <nav class="navbar">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="resources.html">Resources</a>
-  <a href="contact.html">Contact</a>
-</nav>
-
-<button onclick="setLang('hi')">हिंदी</button>
-<button onclick="setLang('en')">English</button>
-
-<div class="lang hi">
-  <h1>मेरे बारे में</h1>
-  <p>
-    मैं प्रतियोगी परीक्षाओं की तैयारी कर रहा हूँ और
-    शिक्षा से जुड़े विषयों पर काम करता हूँ।
-  </p>
-</div>
-
-<div class="lang en">
-  <h1>About Me</h1>
-  <p>
-    I am preparing for competitive examinations and
-    working in the education domain.
-  </p>
-</div>
-
-<footer>
-  © 2026 | Academic Journey
-</footer>
-
 <header>
     <h1>About Me</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 </header>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Me</a>
-    <a href="resources.html">Resources</a>
-    <a href="contact.html">Contact</a>
-</nav>
-
-<div class="container">
-    <h2>My Journey | मेरी यात्रा</h2>
-    <p>
-        I believe in concept clarity, consistency and discipline.<br>
-        मेरा मानना है कि कॉन्सेप्ट क्लैरिटी, निरंतरता और अनुशासन ही सफलता की कुंजी है।
-    </p>
-
-    <p>
-        I manage my preparation along with a full-time job and focus on smart study techniques.
-मैं नौकरी के साथ स्मार्ट तरीके से तैयारी पर विश्वास करता हूँ।
-    </p>
-</div>
+<main>
+    <section>
+        <h2>My Academic Journey</h2>
+        <p>This section can include your education, achievements, and experiences.</p>
+    </section>
+</main>
 
 <footer>
-    © 2026 | Academic Journey
+    <p>&copy; 2026 Jitu Insights. All rights reserved.</p>
 </footer>
-<script>
-function setLang(lang) {
-  document.querySelectorAll('.lang').forEach(el => {
-    el.style.display = 'none';
-  });
-  document.querySelector('.' + lang).style.display = 'block';
-}
-</script>
-
 </body>
 </html>
-
-
-
