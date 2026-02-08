@@ -1,4 +1,40 @@
 body {
+  font-family: Arial, sans-serif;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  background: #f9f9f9;
+  color: #222;
+}
+
+button {
+  background: #1a73e8;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  margin-right: 5px;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: #1558b0;
+}
+
+.lang {
+  display: none;
+}
+
+.lang.hi {
+  display: block;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+}
+
     margin: 0;
     font-family: Arial, sans-serif;
     background: #f2f4f7;
@@ -75,5 +111,6 @@ button {
 .lang.hi {
   display: block;
 }
+
 
 
