@@ -28,26 +28,31 @@ Join Telegram Channel
 <header>
   <button onclick="showHindi()">हिंदी</button>
 <button onclick="showEnglish()">English</button>
+<input type="text" id="searchInput" placeholder="PDF खोजें..." onkeyup="searchPDFs()">
 
     <section id="resources">
   <h2>अध्ययन सामग्री</h2>
 
   <h3>📘 गणित</h3>
-  <ul>
-    <li><a href="pdf/ganit-2024.pdf" target="_blank">महत्वपूर्ण प्रश्न – 2025</a></li>
-    <li><a href="pdf/ganit-2023.pdf" target="_blank">महत्वपूर्ण प्रश्न – 2024</a></li>
-  </ul>
+  <ul id="pdfList">
+  <li>गणित – महत्वपूर्ण प्रश्न 2024</li>
+  <li>रीजनिंग – शॉर्ट नोट्स</li>
+  <li>करंट अफेयर्स – मार्च 2025</li>
+</ul>
+<li>
+  <a href="pdf/ganit-2024.pdf" target="_blank">
+    📄 गणित – महत्वपूर्ण प्रश्न 2024
+  </a>
+  <small>(PDF • 4.2 MB)</small>
+  <div style="background:#f5f5f5;padding:10px;margin-bottom:15px;">
+📢 सभी नए PDF पहले Telegram पर मिलते हैं  
+<a href="https://t.me/jituinsights" target="_blank">
+<b>Join Telegram Channel</b>
+</a>
+</div>
 
-  <h3>🧠 रीजनिंग</h3>
-  <ul>
-    <li><a href="pdf/reasoning-notes.pdf" target="_blank">शॉर्ट नोट्स (PDF)</a></li>
-  </ul>
+</li>
 
-  <h3>📰 करंट अफेयर्स</h3>
-  <ul>
-    <li><a href="pdf/current-march.pdf" target="_blank">मार्च 2025</a></li>
-    <li><a href="pdf/current-feb.pdf" target="_blank">फरवरी 2025</a></li>
-  </ul>
 </section>
 
 
@@ -78,9 +83,20 @@ function showEnglish() {
   document.body.className = "english";
 }
 </script>
+<script>
+function searchPDFs() {
+  let input = document.getElementById("searchInput").value.toLowerCase();
+  let items = document.querySelectorAll("#pdfList li");
+
+  items.forEach(item => {
+    item.style.display = item.innerText.toLowerCase().includes(input) ? "" : "none";
+  });
+}
+</script>
 
 </body>
 </html>
+
 
 
 
