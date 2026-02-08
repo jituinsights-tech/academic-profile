@@ -1,151 +1,50 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f2f4f7;
-    color: #333;
-}
-
-header {
-    background: #0a58ca;
-    color: white;
-    padding: 25px;
-    text-align: center;
-}
-
-nav {
-    background: #084298;
-    padding: 12px;
-    text-align: center;
-}
-
-nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-.container {
-    max-width: 1000px;
-    margin: 25px auto;
-    background: white;
-    padding: 30px;
-    border-radius: 8px;
-}
-
-h2 {
-    color: #0a58ca;
-}
-
-footer {
-    background: #222;
-    color: #ccc;
-    text-align: center;
-    padding: 15px;
-    margin-top: 40px;
-}
-
-.note {
-    background: #e9f2ff;
-    padding: 15px;
-    border-left: 5px solid #0a58ca;
-    margin: 20px 0;
-}
-.lang {
-  display: none;
-}
-
-.lang.hi {
-  display: block;
-}
-body {
   font-family: Arial, sans-serif;
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
-  background: #f9f9f9;
-  color: #222;
+  margin: 0;
+  padding: 0;
 }
 
-button {
-  background: #1a73e8;
-  color: white;
-  border: none;
-  padding: 6px 14px;
-  margin-right: 5px;
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 10px;
+  background: #f4f4f4;
+}
+
+nav ul li {
+  margin: 5px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 8px 12px;
   border-radius: 4px;
 }
 
-button:hover {
-  background: #1558b0;
+nav ul li a.active {
+  background: #0088cc;
+  color: #fff;
 }
 
-.lang {
-  display: none;
-}
-
-.lang.hi {
-  display: block;
-}
-
-footer {
-  margin-top: 40px;
-  font-size: 14px;
-  color: #555;
-  text-align: center;
-}
-.navbar {
-  background: #222;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-
-.navbar a {
-  color: white;
-  margin-right: 15px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.navbar a:hover {
-  text-decoration: underline;
-}
-
-.btn {
+.telegram-btn {
   display: inline-block;
-  background: #25d366;
-  color: white;
-  padding: 10px 16px;
-  text-decoration: none;
+  background-color: #0088cc;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 10px;
   border-radius: 5px;
+  text-decoration: none;
   font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
-.btn:hover {
-  opacity: 0.85;
+.telegram-btn:hover {
+  background-color: #006699;
 }
+
 @media (max-width: 600px) {
-  body {
-    padding: 12px;
+  nav ul {
+    flex-direction: column;
   }
-
-  .navbar a {
-    display: block;
-    margin: 8px 0;
-  }
-
-  button {
-    margin-bottom: 10px;
-  }
-}.english { font-family: Arial, sans-serif; }
-.hindi { font-family: Mangal, Noto Sans Devanagari; }
-
-
-
-
-
-
+}
