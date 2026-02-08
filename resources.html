@@ -6,11 +6,8 @@
   <meta name="description" content="Free academic resources, notes, and PDFs for exam preparation.">
   <title>Academic Resources | Jitu Insights</title>
 
-  <!-- SEO & Open Graph -->
-  <meta property="og:title" content="Academic Resources - Jitu Insights">
-  <meta property="og:description" content="Download free notes, PDFs, and study materials for RRB NTPC and other exams.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://jituinsights-tech.github.io/academic-profile/resources.html">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -29,28 +26,28 @@
 
   <!-- Main Content -->
   <main>
-    <h1>Academic Resources</h1>
+    <h1>📚 Academic Resources</h1>
     <p>Browse and download study materials, notes, and PDFs for exam preparation.</p>
 
     <!-- Search Bar -->
     <section>
-      <input type="text" id="searchBar" placeholder="Search resources..." onkeyup="filterResources()">
+      <input type="text" id="searchBar" placeholder="🔍 Search resources..." onkeyup="filterResources()">
     </section>
 
-    <!-- Resource List -->
+    <!-- Resource Cards -->
     <section id="resourceList">
-      <article>
+      <article class="card">
         <h2>RRB NTPC Notes</h2>
         <img src="images/rrb_ntpc_cover.png" alt="Cover page of RRB NTPC notes PDF" loading="lazy">
         <p>Comprehensive notes for RRB NTPC exam preparation.</p>
-        <a href="pdfs/rrb_ntpc_notes.pdf" target="_blank">Download PDF</a>
+        <a href="pdfs/rrb_ntpc_notes.pdf" target="_blank" class="download-btn">⬇️ Download PDF</a>
       </article>
 
-      <article>
+      <article class="card">
         <h2>Current Affairs (Jan 2026)</h2>
         <img src="images/current_affairs.png" alt="Current affairs January 2026 PDF cover" loading="lazy">
         <p>Latest current affairs summary for competitive exams.</p>
-        <a href="pdfs/current_affairs_jan2026.pdf" target="_blank">Download PDF</a>
+        <a href="pdfs/current_affairs_jan2026.pdf" target="_blank" class="download-btn">⬇️ Download PDF</a>
       </article>
     </section>
   </main>
