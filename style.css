@@ -1,15 +1,20 @@
+/* Global Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
+  background: linear-gradient(135deg, #1e3c72, #2a5298); /* Attractive gradient */
+  color: #fff;
 }
 
+/* Navigation */
 nav ul {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  padding: 10px;
-  background: #f4f4f4;
+  padding: 15px;
+  background: rgba(0,0,0,0.4);
+  margin: 0;
 }
 
 nav ul li {
@@ -20,14 +25,56 @@ nav ul li a {
   text-decoration: none;
   padding: 8px 12px;
   border-radius: 4px;
-}
-
-nav ul li a.active {
-  background: #0088cc;
   color: #fff;
+  transition: background 0.3s;
 }
 
-.telegram-btn {
+nav ul li a.active, nav ul li a:hover {
+  background: #0088cc;
+}
+
+/* Heading */
+main h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2.2em;
+}
+
+/* Search Bar */
+#searchBar {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1em;
+}
+
+/* Resource Cards */
+.card {
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.2);
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+.download-btn, .telegram-btn {
   display: inline-block;
   background-color: #0088cc;
   color: #fff;
@@ -39,12 +86,25 @@ nav ul li a.active {
   transition: background-color 0.3s ease;
 }
 
-.telegram-btn:hover {
+.download-btn:hover, .telegram-btn:hover {
   background-color: #006699;
 }
 
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.4);
+  margin-top: 30px;
+}
+
+/* Responsive */
 @media (max-width: 600px) {
   nav ul {
     flex-direction: column;
+    text-align: center;
+  }
+  .card {
+    margin: 10px;
   }
 }
