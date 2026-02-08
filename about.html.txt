@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>About Me</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>About Me</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="resources.html">Resources</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+    <h2>My Journey | मेरी यात्रा</h2>
+    <p>
+        I believe in concept clarity, consistency and discipline.<br>
+        मेरा मानना है कि कॉन्सेप्ट क्लैरिटी, निरंतरता और अनुशासन ही सफलता की कुंजी है।
+    </p>
+
+    <p>
+        I manage my preparation along with a full-time job and focus on smart study techniques.
+मैं नौकरी के साथ स्मार्ट तरीके से तैयारी पर विश्वास करता हूँ।
+    </p>
+</div>
+
+<footer>
+    © 2026 | Academic Journey
+</footer>
+
+</body>
+</html>

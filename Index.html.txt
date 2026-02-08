@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Academic Profile | Home</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Jitu Academic Profile</h1>
+    <p>Working Professional | Govt Exam Aspirant (NTPC, State Exam)</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="resources.html">Resources</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+    <h2>Welcome | स्वागत है</h2>
+    <p>
+        I am currently working in a 9–5 job and preparing for government competitive exams.<br>
+        मैं 9–5 नौकरी के साथ सरकारी परीक्षाओं की तैयारी कर रहा हूँ।
+    </p>
+
+    <div class="note">
+        This website is created to share my learning, notes and experience —
+        without coaching pressure, but with long-term vision.
+    </div>
+</div>
+
+<footer>
+    © 2026 | Academic Journey
+</footer>
+
+</body>
+</html>
