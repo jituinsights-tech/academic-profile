@@ -8,8 +8,35 @@
 <body>
   <body>
 
+<body>
+
 <button onclick="setLang('hi')">हिंदी</button>
 <button onclick="setLang('en')">English</button>
+
+<div class="lang hi">
+  <h2>स्वागत है</h2>
+</div>
+
+<div class="lang en">
+  <h2>Welcome</h2>
+</div>
+
+<footer>
+  © 2026 | Academic Journey
+</footer>
+
+<script>
+function setLang(lang) {
+  document.querySelectorAll('.lang').forEach(el => {
+    el.style.display = 'none';
+  });
+  document.querySelector('.' + lang).style.display = 'block';
+}
+</script>
+
+</body>
+</html>
+
 
 <hr>
 
@@ -77,6 +104,7 @@ function setLang(lang) {
 
 </body>
 </html>
+
 
 
 
