@@ -6,23 +6,39 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav class="navbar">
+  <nav class="navbar">
   <a href="index.html">Home</a>
   <a href="about.html">About</a>
   <a href="resources.html">Resources</a>
   <a href="contact.html">Contact</a>
 </nav>
 
+<button onclick="setLang('hi')">हिंदी</button>
+<button onclick="setLang('en')">English</button>
+
 <header>
     <h1>Study Resources</h1>
-</header>
+  <div class="lang hi">
+  <h1>अध्ययन सामग्री</h1>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Me</a>
-    <a href="resources.html">Resources</a>
-    <a href="contact.html">Contact</a>
-</nav>
+  <ul>
+    <li><a href="#">गणित – महत्वपूर्ण प्रश्न (PDF)</a></li>
+    <li><a href="#">रीजनिंग – शॉर्ट नोट्स</a></li>
+    <li><a href="#">करंट अफेयर्स – मासिक PDF</a></li>
+  </ul>
+</div>
+
+<div class="lang en">
+  <h1>Study Resources</h1>
+
+  <ul>
+    <li><a href="#">Mathematics – Important Questions (PDF)</a></li>
+    <li><a href="#">Reasoning – Short Notes</a></li>
+    <li><a href="#">Current Affairs – Monthly PDF</a></li>
+  </ul>
+</div>
+
+</header>
 
 <div class="container">
     <h2>Notes & Learning | अध्ययन सामग्री</h2>
@@ -44,5 +60,6 @@
 
 </body>
 </html>
+
 
 
