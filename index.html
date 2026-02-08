@@ -49,8 +49,17 @@
 <footer>
     © 2026 | Academic Journey
 </footer>
+<script>
+function setLang(lang) {
+  document.querySelectorAll('.lang').forEach(el => {
+    el.style.display = 'none';
+  });
+  document.querySelector('.' + lang).style.display = 'block';
+}
+</script>
 
 </body>
 </html>
+
 
 
