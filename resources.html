@@ -1,112 +1,70 @@
 <!DOCTYPE html>
-<html>
-  <p>
-📢 सभी PDF हमारे Telegram चैनल पर भी उपलब्ध हैं:  
-<a href="https://t.me/jituresearch4web" target="_blank">
-Join Telegram Channel
-</a>
-</p>
-
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academic resources, notes, and study materials for competitive exams.">
+  <title>Academic Resources | Jitu Insights</title>
+  
+  <!-- SEO & Open Graph -->
+  <meta property="og:title" content="Academic Resources - Jitu Insights">
+  <meta property="og:description" content="Download free notes, PDFs, and study materials for RRB NTPC and other exams.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jituinsights-tech.github.io/academic-profile/resources.html">
 
-<meta charset="UTF-8">
-<title>Resources</title>
-<link rel="stylesheet" href="style.css">
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav class="navbar">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="resources.html">Resources</a>
-  <a href="contact.html">Contact</a>
-</nav>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="resources.html" class="active">📚 Resources</a></li>
+        <li><a href="contact.html">✉️ Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<button onclick="setLang('hi')">हिंदी</button>
-<button onclick="setLang('en')">English</button>
+  <main>
+    <h1>Academic Resources</h1>
+    <p>Browse and download study materials, notes, and PDFs for exam preparation.</p>
 
-<header>
-  <button onclick="showHindi()">हिंदी</button>
-<button onclick="showEnglish()">English</button>
-<input type="text" id="searchInput" placeholder="PDF खोजें..." onkeyup="searchPDFs()">
+    <!-- Search Bar -->
+    <section>
+      <input type="text" id="searchBar" placeholder="Search resources..." onkeyup="filterResources()">
+    </section>
 
-    <section id="resources">
-  <h2>अध्ययन सामग्री</h2>
+    <!-- Resource List -->
+    <section id="resourceList">
+      <article>
+        <h2>RRB NTPC Notes</h2>
+        <p>Comprehensive notes for RRB NTPC exam preparation.</p>
+        <a href="pdfs/rrb_ntpc_notes.pdf" target="_blank">Download PDF</a>
+      </article>
 
-  <h3>📘 गणित</h3>
-  <ul id="pdfList">
-  <li>गणित – महत्वपूर्ण प्रश्न 2024</li>
-  <li>रीजनिंग – शॉर्ट नोट्स</li>
-  <li>करंट अफेयर्स – मार्च 2025</li>
-</ul>
-<li>
-  <a href="pdf/ganit-2024.pdf" target="_blank">
-    📄 गणित – महत्वपूर्ण प्रश्न 2024
-  </a>
-  <small>(PDF • 4.2 MB)</small>
-  <div style="background:#f5f5f5;padding:10px;margin-bottom:15px;">
-📢 सभी नए PDF पहले Telegram पर मिलते हैं  
-<a href="https://t.me/jituinsights" target="_blank">
-<b>Join Telegram Channel</b>
-</a>
-</div>
+      <article>
+        <h2>Current Affairs (Jan 2026)</h2>
+        <p>Latest current affairs summary for competitive exams.</p>
+        <a href="pdfs/current_affairs_jan2026.pdf" target="_blank">Download PDF</a>
+      </article>
+    </section>
+  </main>
 
-</li>
+  <footer>
+    <p>&copy; 2026 Jitu Insights | Built with ❤️ on GitHub Pages</p>
+  </footer>
 
-</section>
-
-
-</header>
-
-<div class="container">
-    <h2>Notes & Learning | अध्ययन सामग्री</h2>
-    <ul>
-        <li>Maths – Basic Concepts (Coming Soon)</li>
-        <li>Reasoning – Short Tricks</li>
-        <li>GK / GS – Static Notes</li>
-        <li>Exam Strategy & Mistakes</li>
-    </ul>
-
-    <div class="note">
-        Future plan: Structured courses & batches will be added after career stability.
-    </div>
-</div>
-
-<footer>
-    © 2026 | Academic Journey
-</footer>
-<script>
-function showHindi() {
-  document.body.className = "hindi";
-}
-function showEnglish() {
-  document.body.className = "english";
-}
-</script>
-<script>
-function searchPDFs() {
-  let input = document.getElementById("searchInput").value.toLowerCase();
-  let items = document.querySelectorAll("#pdfList li");
-
-  items.forEach(item => {
-    item.style.display = item.innerText.toLowerCase().includes(input) ? "" : "none";
-  });
-}
-</script>
-
+  <!-- Simple JS for Search -->
+  <script>
+    function filterResources() {
+      let input = document.getElementById('searchBar').value.toLowerCase();
+      let articles = document.querySelectorAll('#resourceList article');
+      articles.forEach(article => {
+        let text = article.innerText.toLowerCase();
+        article.style.display = text.includes(input) ? '' : 'none';
+      });
+    }
+  </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
