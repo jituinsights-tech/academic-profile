@@ -3,68 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Free academic resources, notes, and PDFs for exam preparation.">
-  <title>Academic Resources | Jitu Insights</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <title>Resources | Jitu Insights</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navigation -->
   <header>
     <nav>
       <ul>
         <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="about.html">ℹ️ About</a></li>
         <li><a href="resources.html" class="active">📚 Resources</a></li>
         <li><a href="contact.html">✉️ Contact</a></li>
-        <li><a href="https://t.me/jituresearch4web" target="_blank" class="telegram-btn">📲 Telegram</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Main Content -->
   <main>
-    <h1>📚 Academic Resources</h1>
-    <p>Browse and download study materials, notes, and PDFs for exam preparation.</p>
-
-    <!-- Search Bar -->
-    <section>
-      <input type="text" id="searchBar" placeholder="🔍 Search resources..." onkeyup="filterResources()">
-    </section>
-
-    <!-- Resource Cards -->
-    <section id="resourceList">
-      <article class="card">
+    <h1>Resources</h1>
+    <div class="card-container">
+      <div class="card">
         <h2>RRB NTPC Notes</h2>
-        <img src="images/rrb_ntpc_cover.png" alt="Cover page of RRB NTPC notes PDF" loading="lazy">
         <p>Comprehensive notes for RRB NTPC exam preparation.</p>
-        <a href="pdfs/rrb_ntpc_notes.pdf" target="_blank" class="download-btn">⬇️ Download PDF</a>
-      </article>
-
-      <article class="card">
-        <h2>Current Affairs (Jan 2026)</h2>
-        <img src="images/current_affairs.png" alt="Current affairs January 2026 PDF cover" loading="lazy">
+        <a href="pdfs/rrb_ntpc_notes.pdf" target="_blank" class="btn">⬇️ Download</a>
+      </div>
+      <div class="card">
+        <h2>Current Affairs Jan 2026</h2>
         <p>Latest current affairs summary for competitive exams.</p>
-        <a href="pdfs/current_affairs_jan2026.pdf" target="_blank" class="download-btn">⬇️ Download PDF</a>
-      </article>
-    </section>
+        <a href="pdfs/current_affairs_jan2026.pdf" target="_blank" class="btn">⬇️ Download</a>
+      </div>
+    </div>
   </main>
 
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2026 Jitu Insights | Built with ❤️ on GitHub Pages</p>
-    <a href="https://t.me/jituresearch4web" target="_blank" class="telegram-btn">📲 Join Telegram Channel</a>
+    <p>&copy; 2026 Jitu Insights</p>
   </footer>
-
-  <!-- Search Script -->
-  <script>
-    function filterResources() {
-      let input = document.getElementById('searchBar').value.toLowerCase();
-      let articles = document.querySelectorAll('#resourceList article');
-      articles.forEach(article => {
-        let text = article.innerText.toLowerCase();
-        article.style.display = text.includes(input) ? '' : 'none';
-      });
-    }
-  </script>
 </body>
 </html>
