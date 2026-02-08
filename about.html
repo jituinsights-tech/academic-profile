@@ -6,6 +6,28 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<button onclick="setLang('hi')">हिंदी</button>
+<button onclick="setLang('en')">English</button>
+
+<div class="lang hi">
+  <h1>मेरे बारे में</h1>
+  <p>
+    मैं प्रतियोगी परीक्षाओं की तैयारी कर रहा हूँ और
+    शिक्षा से जुड़े विषयों पर काम करता हूँ।
+  </p>
+</div>
+
+<div class="lang en">
+  <h1>About Me</h1>
+  <p>
+    I am preparing for competitive examinations and
+    working in the education domain.
+  </p>
+</div>
+
+<footer>
+  © 2026 | Academic Journey
+</footer>
 
 <header>
     <h1>About Me</h1>
@@ -34,6 +56,15 @@
 <footer>
     © 2026 | Academic Journey
 </footer>
+<script>
+function setLang(lang) {
+  document.querySelectorAll('.lang').forEach(el => {
+    el.style.display = 'none';
+  });
+  document.querySelector('.' + lang).style.display = 'block';
+}
+</script>
 
 </body>
 </html>
+
