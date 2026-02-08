@@ -101,9 +101,18 @@ function setLang(lang) {
   document.querySelector('.' + lang).style.display = 'block';
 }
 </script>
+<script>
+function setLang(lang) {
+  document.querySelectorAll('.lang').forEach(el => {
+    el.style.display = 'none';
+  });
+  document.querySelector('.' + lang).style.display = 'block';
+}
+</script>
 
 </body>
 </html>
+
 
 
 
